@@ -14,7 +14,6 @@ import { Provider } from "react-redux";
 import configureStore from "./store/configureStore.js";
 
 const reduxStore = configureStore();
-
 const jsx = (
     <Provider store={reduxStore}>
         <AppRouter />
