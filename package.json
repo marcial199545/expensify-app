@@ -8,7 +8,9 @@
         "serve": "live-server public/",
         "build-dev": "webpack -w",
         "build-prod": "webpack -p --env production",
-        "dev-server": "webpack-dev-server -w"
+        "dev-server": "webpack-dev-server -w",
+        "start": "node server/server.js",
+        "heroku-postbuild": "npm run build-prod"
     },
     "keywords": [],
     "author": "",
@@ -25,10 +27,11 @@
         "enzyme": "^3.0.0",
         "enzyme-adapter-react-16": "^1.0.0",
         "enzyme-to-json": "^3.0.1",
+        "express": "^4.17.1",
         "extract-text-webpack-plugin": "^3.0.0",
         "jest": "^20.0.4",
         "live-server": "^1.2.0",
-        "moment": "^2.18.1",
+        "moment": "^2.24.0",
         "node-sass": "4.5.3",
         "normalize.css": "^7.0.0",
         "raf": "^3.3.2",
